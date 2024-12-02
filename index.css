@@ -1,0 +1,172 @@
+body{
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background:radial-gradient(circle at top right, rgb(53, 180, 174), rgb(255, 255, 255), white);
+}
+
+#container{
+    background-color:rgb(68, 255, 252);
+    padding: 1rem;
+    padding-bottom: 0rem;
+    border: solid rgb(0, 0, 0);
+    border-radius: 5px;
+   
+}
+
+#list{
+    padding: 1rem;
+    padding-bottom: 1rem;
+    list-style:none;
+    margin:0em;
+    background-color: rgb(118, 214, 206);
+    height: 20rem;
+    width:auto;
+    overflow: auto;
+    border-radius: 10px;
+}
+.list-item{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    background-color: rgb(156, 222, 227);
+    border-radius:10px ;
+    border-bottom: solid 0.5px white;
+    height:1.5rem;
+    margin-top:0.2rem;
+    width: auto;
+    overflow: hidden;
+}
+
+.list-item-input-tarea{
+    background-color:transparent;
+    width: 14rem;
+    border: none;
+    height:1rem;
+    color: rgb(255, 255, 255);
+}
+
+.list-item-delete-btn{
+    /* background-color: rgb(148, 242, 255);*/
+     margin-right: 0.5rem;
+     border:none;
+     background-color: rgb(188, 26, 26);
+     border-radius: 10px;
+ }
+.list-item-check-btn{
+     border:none;
+     background-color: rgb(34, 243, 34);
+     border-radius: 10px;
+     justify-content: bottom;
+ }
+
+#input-item-tarea-btn{
+        
+    border:none;
+    background-color: green;
+    border-radius: 10px;
+    width: 3.5rem;
+    height: 1.5rem;  
+    color: white;
+ }
+ input{
+    background-color: transparent;
+    border: 0.5rem;
+    width: 28rem;
+}
+ #form-input-tarea{
+    width: 16rem;
+    height: 2rem;
+    border-radius:10px ;
+    background-color:   rgb(118, 214, 206);
+ }
+ .form-helper-text{
+    color:red;
+    size: 0.1rem;
+ }
+ 
+#input-item-tarea-btn:active{
+    background-color: light-dark(#71ff3993,rgba(26, 26, 26, 0.113));
+}
+.list-item-delete-btn:active {
+    background-color: light-dark(rgb(255, 0, 0),rgba(26, 26, 26, 0.113));
+  }
+.list-item-check-btn:active {
+    background-color: light-dark(rgba(48, 255, 37, 0.576),rgba(26, 26, 26, 0.113));
+  }
+
+
+.list-item-delete-icon {
+    width: 1rem;
+    height:1rem;
+    color: rgb(255, 255, 255);  
+}
+
+.list-item-check-icon{
+    width: 1rem;
+    height:1rem;
+    color: rgb(255, 255, 255);
+}
+.input-item-tarea-icon{
+    width: 1rem;
+    height:1rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 0.2rem;
+}
+
+#hacer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+#total{
+    background-color: blueviolet;
+    margin: 0.5rem;
+    border-radius: 2px;
+    color:white;
+    border-color: black;
+}
+#completed{
+    background-color: green;
+    margin: 0.5rem;
+    border-radius: 3px;
+    color:white;
+    border-color: black;
+}
+#incompleted{
+    background-color: red;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    color:white;
+    border-color: black;
+}
+@media (min-width: 768px) {
+    #container{
+        width:40rem;
+    }
+    #form-input-tarea{
+        width: 18rem;
+     }
+    .list-item{
+        height: 1.5rem;
+        width: 30rem;
+    }
+    .list-item-input-tarea{
+        width:auto;
+       
+    }
+
+     #total{
+       padding: 0.5rem;
+    }
+    #completed{
+        padding: 0.5rem;
+    }
+    #incompleted{
+        padding: 0.5rem;
+    }
+    
+}
