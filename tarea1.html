@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <center>
+        <header>
+            <h1>TodoApp</h1>
+            <h3>Mis Tareas</h3>
+        </header>
+        <nav id="container">
+            <form id="form">
+                <div class="form-input-container">
+                    <label class="form-input-label" for="form-input-tarea">Nueva Tarea:</label>
+                    <input type="text" class="form-input" id="form-input-tarea" placeholder="Escribe tu tarea aquí" required>
+                    <button type="submit" id="input-item-tarea-btn">Agregar</button>
+                </div>
+            </form>
+            <ul id="list">
+                <li class="list-item">
+                    <button class="list-item-delete-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-delete-icon">
+                            <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                        </svg>  
+                    </button>
+                    
+                    <div class="list-item-input-tarea">
+                        <input type="text" value="" readonly class="list-item-input-tarea">
+                    </div>
+                    <button class="list-item-check-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="list-item-check-icon">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.844-8.791a.75.75 0 0 0-1.188-.918l-3.7 4.79-1.649-1.833a.75.75 0 1 0-1.114 1.004l2.25 2.5a.75.75 0 0 0 1.15-.043l4.25-5.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+    
+                </li>
+            </ul>
+            <footer id="hacer">
+                <div id="total">Total: 0</div>
+                <div id="completed">Completadas: 0</div>
+                <div id="incompleted">Incompletas: 0</div>
+            </footer>
+        </nav>
+    </center>
+    <script src="tareas2.js"></script>
+</body>
+</html>
